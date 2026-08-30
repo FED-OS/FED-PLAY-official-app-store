@@ -1,0 +1,26 @@
+                        <div class="carousel-container" id="carouselContainer">
+                            <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous">‹</button>
+                            <div class="carousel-track" id="carouselTrack" role="list"></div>
+                            <button class="carousel-btn next" id="carouselNext" aria-label="Next">›</button>
+                        </div>
+                    </section>
+                    <div class="section-title">
+                        <h2 id="gridTitle">🛠️ Utility Apps</h2>
+                        <span class="sub-tag" id="gridSub">power up</span>
+                    </div>
+                    <div class="app-grid" id="appGrid" role="list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="data.js"></script>
+    <script src="layout.js"></script>
+    <script src="app.js"></script>
+    <script>
+        window.FED_PAGE = {
+            tab: 'utility',
+            featuredIds: ['fedplay', 'obsidian', 'fed_wallet', 'supabase'],
+            gridTitle: '🛠️ Utility Apps',
+            gridSub: 'power up',
+            hero: { emoji: '🛠️', title: 'Utility', subtitle: 'Dev tools, terminals, wallets, and productivity apps that get things done.', stat: '⚡ developer ready' },
+            welcome: 'Utility — build the unofficial way'

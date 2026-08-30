@@ -1,0 +1,12 @@
+        const full = Math.floor(rating);
+        let html = '';
+        for (let i = 0; i < full; i++) html += '★';
+        if (rating % 1 >= 0.5) html += '½';
+        for (let i = html.length; i < 5; i++) html += '☆';
+        return html;
+    }
+
+    function getCategoryLabel(cat) {
+        const map = { social: '💬 Social', creative: '🎨 Creative', utility: '🛠️ Utility', games: '🎮 Games', movies: '🎬 Movies' };
+        return map[cat] || '📦 App';
+    }

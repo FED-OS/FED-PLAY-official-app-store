@@ -1,0 +1,5 @@
+35:        if (app.isAppStore) return 'btn-appstore';
+67:    function getFilteredApps() {
+152:    function renderGrid() {
+208:    function handleAppAction(action, id) {
+289:    function buildCarousel() {

@@ -1,0 +1,21 @@
+    function openHolographicModal() {
+        const modal = document.getElementById('holographicModal');
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        if (!paypalRendered) { renderPayPal(); paypalRendered = true; }
+    }
+    function closeHolographicModal() {
+        const modal = document.getElementById('holographicModal');
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+        pendingPremiumApp = null;
+    }
+    function renderPayPal() {
+        const container = document.getElementById('paypal-button-container-quick');
+        if (!container || typeof paypal === 'undefined') return;
+        container.innerHTML = '';
+        try {
+            paypal.Buttons({
+                createOrder: function (data, actions) { return actions.order.create({ purchase_units: [{ amount: { value: '10.00' } }] }); },
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {

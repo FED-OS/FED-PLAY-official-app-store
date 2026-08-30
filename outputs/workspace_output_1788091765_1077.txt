@@ -1,0 +1,70 @@
+=== BROWSER STATE ===
+URL: http://localhost:9091/games.html
+Title: FED Play · Games
+Result: Clicked: [1]
+
+Interactive elements (56):
+  [0] a "appsApps39" -> index.html
+  [1] a "sports_esportsGames8" -> games.html
+  [2] a "local_moviesMovies & TV8" -> movies.html
+  [3] a "paletteCreative6" -> creative.html
+  [4] a "buildUtility10" -> utility.html
+  [5] a "favoriteFED Originals3" -> fed-originals.html
+  [6] a "redeemMissing apps19" -> missing.html
+  [7] a "workspace_premiumPremium5" -> premium.html
+  [8] a "lockPrivate3" -> private.html
+  [9] a "storefrontApp Store4" -> appstore.html
+  [11] input type="text"
+  [12] button type="button" "Subscribe"
+  [13] button "light_mode
+                    dark_mode"
+  [14] button "⬇ Install →"
+  [15] button "‹"
+  [16] button "Install"
+  [17] button "Install"
+  [18] button "💎 Unlock"
+  [19] button "Install"
+  [20] button "Install"
+  [21] button "Install"
+  [22] button "Install"
+  [23] button "💎 Unlock"
+  [24] button "Install"
+  [25] button "Install"
+  [26] button "💎 Unlock"
+  [27] button "Install"
+  [28] button "Install"
+  [29] button "Install"
+  [30] button "Install"
+  [31] button "💎 Unlock"
+  [32] button "Install"
+  [33] button "Install"
+  [34] button "💎 Unlock"
+  [35] button "Install"
+  [36] button "Install"
+  [37] button "Install"
+  [38] button "Install"
+  [39] button "💎 Unlock"
+  [40] button "Install"
+  [41] button "Install"
+  [42] button "💎 Unlock"
+  [43] button "Install"
+  [44] button "Install"
+  [45] button "Install"
+  [46] button "Install"
+  [47] button "💎 Unlock"
+  [48] button "›"
+  [49] button "Install"
+  [50] button "Install"
+  [51] button "💎 Unlock"
+  [52] button "Install"
+  [53] button "Install"
+  [54] button "Install"
+  [55] button "Install"
+  [56] button "💎 Unlock"
+
+Accessibility tree:
+Page text: play_arrow FED Play apps Apps 39 sports_esports Games 8 local_movies Movies & TV 8 palette Creative 6 build Utility 10 favorite FED Originals 3 redeem Missing apps 19 workspace_premium Premium 5 lock Private 3 storefront App Store 4 search mic Subscribe light_mode dark_mode F ✨ All ⭐ Featured 💎 Premium 🔒 Private 📱 App Store 💬 Social 🎨 Creative 🛠️ Utility 🎮 Games 🎬 Movies 🎮 Games Indie gems, retro classics, and blockbuster adventures — all sideload-ready. 📦 8 apps ⭐ 4.8 avg rating 🕹️ controller friendly Itch.io Indie game marketplace — experimental games, game jams, and creative prototypes. ⭐ 4.8 (1.8k reviews) 📦 official wrapper ⭐ EDITOR'S PICK ⬇ Install → 🔥 Trending Games live ‹ Itch.io 🎮 Games ★★★★½ Install Pokémon FireRed 🎮 Games ★★★★½ Install 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock Stardew Valley 🎮 Games ★★★★½ Install Minecraft 🎮 Games ★★★★½ Install Roblox 🎮 Games ★★★★½ Install Terraria 🎮 Games ★★★★½ Install 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock Itch.io 🎮 Games ★★★★½ Install Pokémon FireRed 🎮 Games ★★★★½ Install 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock Stardew Valley 🎮 Games ★★★★½ Install Minecraft 🎮 Games ★★★★½ Install Roblox 🎮 Games ★★★★½ Install Terraria 🎮 Games ★★★★½ Install 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock Itch.io 🎮 Games ★★★★½ Install Pokémon FireRed 🎮 Games ★★★★½ Install 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock Stardew Valley 🎮 Games ★★★★½ Install Minecraft 🎮 Games ★★★★½ Install Roblox 🎮 Games ★★★★½ Install Terraria 🎮 Games ★★★★½ Install 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock Itch.io 🎮 Games ★★★★½ Install Pokémon FireRed 🎮 Games ★★★★½ Install 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock Stardew Valley 🎮 Games ★★★★½ Install Minecraft 🎮 Games ★★★★½ Install Roblox 🎮 Games ★★★★½ Install Terraria 🎮 Games ★★★★½ Install 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock › 🎮 Top Games play now Itch.io 🎮 Games ★★★★½ 4.8 ⭐ EDITOR’S CHOICE Install Pokémon FireRed 🎮 Games ★★★★½ 4.9 ⭐ EDITOR’S CHOICE Install 💎 PREMIUM pokejumper 🎮 Games ★★★★½ 4.7 💎 Unlock Stardew Valley 🎮 Games ★★★★½ 4.9 ⭐ EDITOR’S 
+
+Screenshot: /workspace/.screenshots/step_009.png
+Use see-image to view: /workspace/.screenshots/step_009.png
+=== END ===

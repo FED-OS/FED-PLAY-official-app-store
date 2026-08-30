@@ -1,0 +1,31 @@
+
+    // ---- sidebar / chips / search / dark mode ----
+    function buildSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        if (!sidebar) return;
+        const tab = (window.FED_PAGE || {}).tab || 'apps';
+        const items = TABS.map(t => {
+            const count = countForTab(t.id);
+            const active = t.id === tab ? ' active' : '';
+            const cls = t.cls ? ` ${t.cls}` : '';
+            return `<a class="sidebar-item${active}${cls}" href="${t.href}" data-sidebar="${t.id}">
+                <span class="material-symbols-outlined">${t.icon}</span><span>${t.label}</span><span class="badge">${count}</span>
+            </a>`;
+        }).join('');
+        // insert divider before premium/private/appstore
+        const html = `
+            <div class="sidebar-brand">
+                <div class="brand-icon"><span class="material-symbols-outlined" style="font-size:18px;">play_arrow</span></div>
+                <div class="brand-text">FED <span>Play</span></div>
+            </div>
+            ${items.slice(0, 7).join('')}
+            <div class="sidebar-divider"></div>
+            ${items.slice(7).join('')}
+        `;
+        sidebar.innerHTML = html;
+    }
+
+    function countForTab(id) {
+        if (id === 'apps') return APPS.length;
+        if (id === 'premium') return APPS.filter(a => a.isPremium).length;
+        if (id === 'private') return APPS.filter(a => a.isPrivate).length;

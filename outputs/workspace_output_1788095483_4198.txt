@@ -1,0 +1,59 @@
+    function renderGrid() {
+        const grid = document.getElementById('appGrid');
+        const title = document.getElementById('gridTitle');
+        const sub = document.getElementById('gridSub');
+        if (!grid) return;
+        const filtered = getFilteredApps();
+
+        if (activeCategory === 'premium') { title.textContent = '💎 Premium Apps'; sub.textContent = 'exclusive content'; }
+        else if (activeCategory === 'private') { title.textContent = '🔒 Private Apps'; sub.textContent = 'request access from creator'; }
+        else if (activeCategory === 'appstore') { title.textContent = '📱 FED Play App Store'; sub.textContent = 'download the app'; }
+        else if (activeCategory === 'featured') { title.textContent = '⭐ Featured Apps'; sub.textContent = "editor's picks"; }
+        else { title.textContent = window.FED_PAGE.gridTitle || '📦 Most Wanted'; sub.textContent = window.FED_PAGE.gridSub || 'sideload ready'; }
+
+        const countEl = document.getElementById('searchCount');
+        if (countEl) {
+            if (searchQuery.trim() !== '') {
+                countEl.textContent = `${filtered.length} result${filtered.length !== 1 ? 's' : ''}`;
+                countEl.classList.add('visible');
+            } else countEl.classList.remove('visible');
+        }
+
+        if (filtered.length === 0) {
+            grid.innerHTML = `<div class="empty-state"><div class="empty-icon">🌀</div><h3>No apps found</h3><p>Try a different category or search term</p></div>`;
+            return;
+        }
+
+        grid.innerHTML = filtered.map((app, index) => {
+            let cardClass = '', badgeHtml = '', btnText = 'Install', btnAction = 'free';
+            if (app.isPremium) { cardClass = 'premium-card'; badgeHtml = '<div class="badge-tag premium">💎 Premium</div>'; btnText = '💎 Unlock'; btnAction = 'premium'; }
+            else if (app.isPrivate) { cardClass = 'private-card'; badgeHtml = '<div class="badge-tag private">🔒 Private</div>'; btnText = '🔒 Request'; btnAction = 'private'; }
+            else if (app.isAppStore) { cardClass = 'appstore-card'; badgeHtml = '<div class="badge-tag appstore">📱 App Store</div>'; btnText = '📱 Download'; btnAction = 'appstore'; }
+            const btnClass = getButtonClass(app);
+            const delay = Math.min(index * 0.03, 0.5);
+            return `
+                <div class="app-card ${cardClass}" style="animation-delay:${delay}s" role="listitem">
+                    ${badgeHtml}
+                    <div class="app-icon-wrap">
+                        <img class="app-icon" src="${app.imageUrl}" alt="${escapeHtml(app.name)}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="app-icon-fallback">${getCategoryEmoji(app.category)}</span>
+                        <div>
+                            <div class="app-name">${escapeHtml(app.name)}</div>
+                            <div class="app-category">${getCategoryLabel(app.category)}</div>
+                        </div>
+                    </div>
+                    <div class="stars">${renderStars(app.rating)} <span class="rating-num">${app.rating}</span></div>
+                    ${app.editorsChoice ? '<div class="editors-choice">⭐ Editor’s choice</div>' : ''}
+                    <button class="install-btn ${btnClass}" data-id="${app.id}" data-action="${btnAction}" data-url="${app.downloadUrl || ''}" data-contact="${app.creatorContact || ''}">${btnText}</button>
+                </div>`;
+        }).join('');
+
+        grid.querySelectorAll('.install-btn').forEach(btn => {
+            btn.addEventListener('click', function () { handleAppAction(this.dataset.action, this.dataset.id); });
+        });
+    }
+
+    // ---- app action ----
+    function handleAppAction(action, id) {
+        const app = APPS.find(a => a.id === id);
+        if (!app) return;

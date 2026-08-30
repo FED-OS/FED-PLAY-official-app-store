@@ -1,0 +1,21 @@
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: true,
+        tags: ["apps", "utility", "appstore"],
+        imageUrl: "https://placehold.co/400x400/a5b4fc/0c0a1d?text=💻"
+    },
+    {
+        id: "fed_store_tv",
+        name: "📺 FED Play TV",
+        category: "movies",
+        featured: false,
+        rating: 4.7, reviews: "640",
+        description: "FED Play optimized for Android TV & Fire Stick — big-screen browsing & casting.",
+        downloadUrl: "https://www.mediafire.com/file/hnm5epejah3v63l/app-release%25233.apk/file",
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: true,
+        tags: ["apps", "movies", "appstore"],
+        imageUrl: "https://placehold.co/400x400/a5b4fc/0c0a1d?text=📺"
+    }
+];
+
+// Tab metadata — drives sidebar, badges, page heroes

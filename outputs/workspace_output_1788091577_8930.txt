@@ -1,0 +1,3 @@
+213:            openHolographicModal();
+225:    function openHolographicModal() {
+384:        if (trigger) trigger.addEventListener('click', openHolographicModal);

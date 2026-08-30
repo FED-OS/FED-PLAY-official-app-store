@@ -1,0 +1,31 @@
+        return `
+        <div class="holographic-modal-overlay" id="holographicModal">
+            <div class="holographic-modal-content" role="dialog" aria-modal="true" aria-label="Payment options">
+                <button class="modal-close" id="holographicModalClose" type="button" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="card-header">
+                    <h1>⚡ <span class="gp-highlight">FED</span> Play <span style="font-weight:400;color:var(--text-muted);">·</span> Premium</h1>
+                    <p>Choose your payment method — fast, secure, and private.</p>
+                </div>
+                <div class="grid-2col">
+                    <div class="embedded-wrapper">
+                        <span class="label"><i class="fas fa-paypal" style="margin-right:4px;"></i> PayPal</span>
+                        <div id="paypal-button-container-quick"></div>
+                    </div>
+                    <div class="embedded-wrapper">
+                        <span class="label"><i class="fas fa-bolt" style="margin-right:4px;"></i> Stripe</span>
+                        <stripe-buy-button buy-button-id="buy_btn_1TqoW5LSIB6IjFRXK9UsvpAT" publishable-key="pk_live_51TKTF4LSIB6IjFRX3lKiYl3vVLCiphsZluzPsi9Zzz4Dxs1AxXqn2tQXwpXlKuzP2ePkXIn45BoqkVRsSVhSczkk00EhKZvS83"></stripe-buy-button>
+                    </div>
+                </div>
+                <div class="flex-row" style="margin-top:0.6rem;">
+                    <button class="btn btn-venmo" id="venmoQuickBtn" type="button" style="flex:1;"><i class="fab fa-venmo"></i> Venmo</button>
+                    <button class="btn btn-crypto" id="cryptoPayBtn" type="button" style="flex:1;"><i class="fab fa-bitcoin"></i> Crypto</button>
+                </div>
+                <div class="divider"></div>
+                <button class="crypto-toggle" id="cryptoToggle" type="button">
+                    <span>🔑 Reveal Crypto &amp; Secure Options</span>
+                    <span class="arrow">▾</span>
+                </button>
+                <div class="crypto-content" id="cryptoContent">
+                    <div class="crypto-grid">

@@ -1,0 +1,51 @@
+            return `<a class="sidebar-item${active}${cls}" href="${t.href}" data-sidebar="${t.id}">
+                <span class="material-symbols-outlined">${t.icon}</span><span>${t.label}</span><span class="badge">${count}</span>
+            </a>`;
+        }).join('');
+        // insert divider before premium/private/appstore
+        const html = `
+            <div class="sidebar-brand">
+                <div class="brand-icon"><span class="material-symbols-outlined" style="font-size:18px;">play_arrow</span></div>
+                <div class="brand-text">FED <span>Play</span></div>
+            </div>
+            ${items.slice(0, 7).join('')}
+            <div class="sidebar-divider"></div>
+            ${items.slice(7).join('')}
+        `;
+        sidebar.innerHTML = html;
+    }
+
+    function countForTab(id) {
+        if (id === 'apps') return APPS.length;
+        if (id === 'premium') return APPS.filter(a => a.isPremium).length;
+        if (id === 'private') return APPS.filter(a => a.isPrivate).length;
+        if (id === 'appstore') return APPS.filter(a => a.isAppStore).length;
+        return APPS.filter(a => a.tags.includes(id)).length;
+    }
+
+    function buildChips() {
+        const list = document.getElementById('chipList');
+        if (!list) return;
+        const tab = (window.FED_PAGE || {}).tab || 'apps';
+        // For dedicated tab pages, the "all" chip corresponds to that tab; default active is 'all'
+        list.innerHTML = CHIPS.map(c => {
+            const cls = c.cls ? ` ${c.cls}` : '';
+            const active = c.cat === 'all' ? ' active' : '';
+            return `<div class="chip${cls}${active}" data-cat="${c.cat}">${c.label}</div>`;
+        }).join('');
+    }
+
+    function initChips() {
+        document.querySelectorAll('.chip').forEach(chip => {
+            chip.addEventListener('click', () => {
+                document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                activeCategory = chip.dataset.cat;
+                renderGrid();
+            });
+        });
+    }
+
+    function initSearch() {
+        const input = document.getElementById('searchInput');
+        if (!input) return;

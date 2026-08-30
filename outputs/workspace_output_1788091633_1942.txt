@@ -1,0 +1,33 @@
+=== BROWSER STATE ===
+URL: chrome-error://chromewebdata/
+Title: chrome
+Result: ERROR: goto failed — Error: Page.goto: net::ERR_BLOCKED_BY_CSP at https://chrome//newtab
+Call log:
+  - navigating to "https://chrome//newtab", waiting until "load"
+
+
+Accessibility tree:
+Page text: chrome is blocked This content is blocked. Contact the site owner to fix the issue. ERR_BLOCKED_BY_CSP This content is blocked. Contact the site owner to fix the issue. var loadTimeDataRaw = {"details":"Details","errorCode":"ERR_BLOCKED_BY_CSP","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"\u003Cspan>chrome\u003C/span> is blocked"},"hideDetails":"Hide details","iconClass":"icon-generic","isOfflineError":false,"language":"en","suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"This content is blocked. Contact the site owner to fix the issue."},"textdirection":"ltr","title":"chrome"};
+
+Errors: Console Errors (10):
+   • Framing 'http://localhost:9090/' violates the following report-only Content Security Policy directive: "frame-src https://m.stripe.network". The violation has been logged, but no further action has been taken.
+
+   • Framing 'http://localhost:9090/' violates the following Content Security Policy directive: "frame-src https://m.stripe.network". The request has been blocked.
+
+   • Framing 'http://localhost:9090/' violates the following report-only Content Security Policy directive: "frame-src https://m.stripe.network". The violation has been logged, but no further action has been taken.
+
+   • Framing 'http://localhost:9090/' violates the following Content Security Policy directive: "frame-src https://m.stripe.network". The request has been blocked.
+
+   • Framing 'http://localhost:9090/' violates the following report-only Content Security Policy directive: "frame-src https://m.stripe.network". The violation has been logged, but no further action has been taken.
+
+   • Framing 'http://localhost:9090/' violates the following Content Security Policy directive: "frame-src https://m.stripe.network". The request has been blocked.
+
+   • Framing 'https://01uh6.app.super.myninja.ai/' violates the following report-only Content Security Policy directive: "frame-src https://m.stripe.network". The violation has been logged, but no further action has been taken.
+
+   • Framing 'https://01uh6.app.super.myninja.ai/' violates the following Content Security Policy directive: "frame-src https://m.stripe.network". The request has been blocked.
+
+   • Framing 'https://chrome/' violates the following report-only Content Security Policy directive: "frame-src https://m.stripe.network". The violation has been logged, but no further action has been taken.
+
+   • Framing 'https://chrome/' violates the following Content Security Policy directive: "frame-src https://m.stripe.network". The request has been blocked.
+
+=== END ===

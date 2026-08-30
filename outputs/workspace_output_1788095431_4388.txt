@@ -1,0 +1,4 @@
+    { id: "private",       label: "Private",         icon: "lock",                href: "private.html",       emoji: "M-pM-^_M-^TM-^R", cls: "private" },$
+    { id: "appstore",      label: "App Store",       icon: "storefront",          href: "appstore.html",      emoji: "M-pM-^_M-^SM-1", cls: "appstore" }$
+];$
+$

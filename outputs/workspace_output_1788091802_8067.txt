@@ -1,0 +1,70 @@
+=== BROWSER STATE ===
+URL: http://localhost:9091/movies.html
+Title: FED Play · Movies & TV
+Result: Clicked: [2]
+
+Interactive elements (56):
+  [0] a "appsApps39" -> index.html
+  [1] a "sports_esportsGames8" -> games.html
+  [2] a "local_moviesMovies & TV8" -> movies.html
+  [3] a "paletteCreative6" -> creative.html
+  [4] a "buildUtility10" -> utility.html
+  [5] a "favoriteFED Originals3" -> fed-originals.html
+  [6] a "redeemMissing apps19" -> missing.html
+  [7] a "workspace_premiumPremium5" -> premium.html
+  [8] a "lockPrivate3" -> private.html
+  [9] a "storefrontApp Store4" -> appstore.html
+  [11] input type="text"
+  [12] button type="button" "Subscribe"
+  [13] button "light_mode
+                    dark_mode"
+  [14] button "⬇ Install →"
+  [15] button "‹"
+  [16] button "Install"
+  [17] button "Install"
+  [18] button "💎 Unlock"
+  [19] button "🔒 Request"
+  [20] button "Install"
+  [21] button "Install"
+  [22] button "Install"
+  [23] button "📱 Download"
+  [24] button "Install"
+  [25] button "Install"
+  [26] button "💎 Unlock"
+  [27] button "🔒 Request"
+  [28] button "Install"
+  [29] button "Install"
+  [30] button "Install"
+  [31] button "📱 Download"
+  [32] button "Install"
+  [33] button "Install"
+  [34] button "💎 Unlock"
+  [35] button "🔒 Request"
+  [36] button "Install"
+  [37] button "Install"
+  [38] button "Install"
+  [39] button "📱 Download"
+  [40] button "Install"
+  [41] button "Install"
+  [42] button "💎 Unlock"
+  [43] button "🔒 Request"
+  [44] button "Install"
+  [45] button "Install"
+  [46] button "Install"
+  [47] button "📱 Download"
+  [48] button "›"
+  [49] button "Install"
+  [50] button "Install"
+  [51] button "💎 Unlock"
+  [52] button "🔒 Request"
+  [53] button "Install"
+  [54] button "Install"
+  [55] button "Install"
+  [56] button "📱 Download"
+
+Accessibility tree:
+Page text: play_arrow FED Play apps Apps 39 sports_esports Games 8 local_movies Movies & TV 8 palette Creative 6 build Utility 10 favorite FED Originals 3 redeem Missing apps 19 workspace_premium Premium 5 lock Private 3 storefront App Store 4 search mic Subscribe light_mode dark_mode F ✨ All ⭐ Featured 💎 Premium 🔒 Private 📱 App Store 💬 Social 🎨 Creative 🛠️ Utility 🎮 Games 🎬 Movies 🎬 Movies & TV Stream anime, blockbusters, and live TV — no subscription walls. 📦 8 apps ⭐ 4.7 avg rating 📺 unlimited streams Seeflix Free streaming website — movies and TV shows, no registration required. ⭐ 4.7 (2.8k reviews) 📦 official wrapper ⭐ EDITOR'S PICK ⬇ Install → 🔥 Trending Streams live ‹ WCO TV 🎬 Movies ★★★★½ Install Seeflix 🎬 Movies ★★★★½ Install 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 🔒 🔒 Elite Streams 🎬 Movies ★★★★½ 🔒 Request Crunchyroll 🎬 Movies ★★★★½ Install Tubi 🎬 Movies ★★★★½ Install Plex 🎬 Movies ★★★★☆ Install 📱 📺 FED Play TV 🎬 Movies ★★★★½ 📱 Download WCO TV 🎬 Movies ★★★★½ Install Seeflix 🎬 Movies ★★★★½ Install 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 🔒 🔒 Elite Streams 🎬 Movies ★★★★½ 🔒 Request Crunchyroll 🎬 Movies ★★★★½ Install Tubi 🎬 Movies ★★★★½ Install Plex 🎬 Movies ★★★★☆ Install 📱 📺 FED Play TV 🎬 Movies ★★★★½ 📱 Download WCO TV 🎬 Movies ★★★★½ Install Seeflix 🎬 Movies ★★★★½ Install 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 🔒 🔒 Elite Streams 🎬 Movies ★★★★½ 🔒 Request Crunchyroll 🎬 Movies ★★★★½ Install Tubi 🎬 Movies ★★★★½ Install Plex 🎬 Movies ★★★★☆ Install 📱 📺 FED Play TV 🎬 Movies ★★★★½ 📱 Download WCO TV 🎬 Movies ★★★★½ Install Seeflix 🎬 Movies ★★★★½ Install 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 🔒 🔒 Elite Streams 🎬 Movies ★★★★½ 🔒 Request Crunchyroll 🎬 Movies ★★★★½ Install Tubi 🎬 Movies ★★★★½ Install Plex 🎬 Movies ★★★★☆ Install 📱 📺 FED Play TV 🎬 Movies ★★★★½ 📱 Download › 🎬 Movies & TV stream now WCO TV 🎬 Movies ★★★★½ 4.6 Install Seeflix 🎬 Movies ★★★★½ 4.7 ⭐ EDITOR’S CHOICE Install 💎 PREMIUM Menina dancando funk 🎬 Movies ★★★★½ 4.8 ⭐ EDITOR’S CHOICE 💎 Unlock 
+
+Screenshot: /workspace/.screenshots/step_010.png
+Use see-image to view: /workspace/.screenshots/step_010.png
+=== END ===

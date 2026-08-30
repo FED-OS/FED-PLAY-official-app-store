@@ -1,0 +1,56 @@
+=== BROWSER STATE ===
+URL: http://localhost:9091/premium.html
+Title: FED Play · Premium
+Result: Clicked: [7]
+
+Interactive elements (42):
+  [0] a "appsApps39" -> index.html
+  [1] a "sports_esportsGames8" -> games.html
+  [2] a "local_moviesMovies & TV8" -> movies.html
+  [3] a "paletteCreative6" -> creative.html
+  [4] a "buildUtility10" -> utility.html
+  [5] a "favoriteFED Originals3" -> fed-originals.html
+  [6] a "redeemMissing apps19" -> missing.html
+  [7] a "workspace_premiumPremium5" -> premium.html
+  [8] a "lockPrivate3" -> private.html
+  [9] a "storefrontApp Store4" -> appstore.html
+  [11] input type="text"
+  [12] button type="button" "Subscribe"
+  [13] button "light_mode
+                    dark_mode"
+  [14] button "💎 Unlock →"
+  [15] button "‹"
+  [16] button "💎 Unlock"
+  [17] button "💎 Unlock"
+  [18] button "💎 Unlock"
+  [19] button "💎 Unlock"
+  [20] button "💎 Unlock"
+  [21] button "💎 Unlock"
+  [22] button "💎 Unlock"
+  [23] button "💎 Unlock"
+  [24] button "💎 Unlock"
+  [25] button "💎 Unlock"
+  [26] button "💎 Unlock"
+  [27] button "💎 Unlock"
+  [28] button "💎 Unlock"
+  [29] button "💎 Unlock"
+  [30] button "💎 Unlock"
+  [31] button "💎 Unlock"
+  [32] button "💎 Unlock"
+  [33] button "💎 Unlock"
+  [34] button "💎 Unlock"
+  [35] button "💎 Unlock"
+  [36] button "›"
+  [37] button "💎 Unlock"
+  [38] button "💎 Unlock"
+  [39] button "💎 Unlock"
+  [40] button "💎 Unlock"
+  [41] button "💎 Unlock"
+  [86] button "↑"
+
+Accessibility tree:
+Page text: play_arrow FED Play apps Apps 39 sports_esports Games 8 local_movies Movies & TV 8 palette Creative 6 build Utility 10 favorite FED Originals 3 redeem Missing apps 19 workspace_premium Premium 5 lock Private 3 storefront App Store 4 search mic Subscribe light_mode dark_mode F ✨ All ⭐ Featured 💎 Premium 🔒 Private 📱 App Store 💬 Social 🎨 Creative 🛠️ Utility 🎮 Games 🎬 Movies 💎 Premium Exclusive apps, ad-free experiences, and VIP content. Unlock with crypto, card, or wallet. 📦 5 apps ⭐ 4.8 avg rating 💎 pay what you want 🎨 Pro Studio 💎 PREMIUM Professional drawing & painting suite with 200+ brushes and layer support. ⭐ 4.9 (890 reviews) 📦 official wrapper ⭐ EDITOR'S PICK 💎 Unlock → 🔥 Trending Premium live ‹ 💎 🌸 Caliee Rae Club 💬 Social ★★★★½ 💎 Unlock 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock 💎 🎨 Pro Studio 🎨 Creative ★★★★½ 💎 Unlock 💎 🌸 Caliee Rae Club 💬 Social ★★★★½ 💎 Unlock 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock 💎 🎨 Pro Studio 🎨 Creative ★★★★½ 💎 Unlock 💎 🌸 Caliee Rae Club 💬 Social ★★★★½ 💎 Unlock 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock 💎 🎨 Pro Studio 🎨 Creative ★★★★½ 💎 Unlock 💎 🌸 Caliee Rae Club 💬 Social ★★★★½ 💎 Unlock 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock 💎 🎨 Pro Studio 🎨 Creative ★★★★½ 💎 Unlock › 💎 Premium Unlock go premium 💎 PREMIUM 🌸 Caliee Rae Club 💬 Social ★★★★½ 4.9 💎 Unlock 💎 PREMIUM pokejumper 🎮 Games ★★★★½ 4.7 💎 Unlock 💎 PREMIUM Menina dancando funk 🎬 Movies ★★★★½ 4.8 ⭐ EDITOR’S CHOICE 💎 Unlock 💎 PREMIUM 👑 VIP Arcade 🎮 Games ★★★★½ 4.8 ⭐ EDITOR’S CHOICE 💎 Unlock 💎 PREMIUM 🎨 Pro Studio 🎨 Creative ★★★★½ 4.9 ⭐ EDITOR’S CHOICE 💎 Unlock 🧩 FED Play — the ultimate app store for websites without official apps. 📲 Download the FED Play app from the App St
+
+Screenshot: /workspace/.screenshots/step_011.png
+Use see-image to view: /workspace/.screenshots/step_011.png
+=== END ===

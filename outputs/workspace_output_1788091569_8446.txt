@@ -1,0 +1,10 @@
+9:    const PAYPAL_SDK = 'https://www.paypal.com/sdk/js?client-id=AaZIURGHfoVL0seNGmKhkm3_piU1UERhw7N4TaWhA8DIRRfxZ383l5QqVbyBHfsrB1Hz3H589vd1ZcpI&buyer-country=US&currency=USD&components=buttons&enable-funding=venmo,paylater,card';
+10:    const STRIPE_SDK = 'https://js.stripe.com/v3/buy-button.js';
+72:                        <span class="label"><i class="fas fa-paypal" style="margin-right:4px;"></i> PayPal</span>
+73:                        <div id="paypal-button-container-quick"></div>
+77:                        <stripe-buy-button buy-button-id="buy_btn_1TqoW5LSIB6IjFRXK9UsvpAT" publishable-key="pk_live_51TKTF4LSIB6IjFRX3lKiYl3vVLCiphsZluzPsi9Zzz4Dxs1AxXqn2tQXwpXlKuzP2ePkXIn45BoqkVRsSVhSczkk00EhKZvS83"></stripe-buy-button>
+147:        if (!document.getElementById('paypal-sdk')) {
+149:            s.src = PAYPAL_SDK; s.id = 'paypal-sdk';
+150:            s.setAttribute('data-sdk-integration-source', 'developer-studio');
+153:        if (!document.getElementById('stripe-buy-sdk')) {
+155:            s.src = STRIPE_SDK; s.id = 'stripe-buy-sdk'; s.async = true;

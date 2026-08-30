@@ -1,0 +1,2 @@
+Fixed broken icon URLs
+431:        imageUrl: "https://placehold.co/400x400/007ACC/ffffff?text=VS"

@@ -1,0 +1,40 @@
+33:        if (app.isPremium) return 'btn-premium';
+34:        if (app.isPrivate) return 'btn-private';
+35:        if (app.isAppStore) return 'btn-appstore';
+72:            if (tab === 'games' && !app.tags.includes('games')) return false;
+73:            if (tab === 'movies' && !app.tags.includes('movies')) return false;
+74:            if (tab === 'creative' && !app.tags.includes('creative')) return false;
+75:            if (tab === 'utility' && !app.tags.includes('utility')) return false;
+76:            if (tab === 'fed_originals' && !app.tags.includes('fed_originals')) return false;
+77:            if (tab === 'missing' && !app.tags.includes('missing')) return false;
+78:            if (tab === 'premium' && !app.isPremium) return false;
+79:            if (tab === 'private' && !app.isPrivate) return false;
+80:            if (tab === 'appstore' && !app.isAppStore) return false;
+84:            if (activeCategory === 'premium' && !app.isPremium) return false;
+85:            if (activeCategory === 'private' && !app.isPrivate) return false;
+86:            if (activeCategory === 'appstore' && !app.isAppStore) return false;
+88:                activeCategory !== 'private' && activeCategory !== 'appstore' && app.category !== activeCategory)
+108:        if (app.isPremium) { btnText = '💎 Unlock'; btnAction = 'premium'; badgeHtml = '<span class="featured-badge-tag">💎 Premium</span>'; }
+109:        else if (app.isPrivate) { btnText = '🔒 Request'; btnAction = 'private'; badgeHtml = '<span class="featured-badge-tag">🔒 Private</span>'; }
+110:        else if (app.isAppStore) { btnText = '📱 Download'; btnAction = 'appstore'; badgeHtml = '<span class="featured-badge-tag">📱 App Store</span>'; }
+161:        else if (activeCategory === 'appstore') { title.textContent = '📱 FED Play App Store'; sub.textContent = 'download the app'; }
+180:            if (app.isPremium) { cardClass = 'premium-card'; badgeHtml = '<div class="badge-tag premium">💎 Premium</div>'; btnText = '💎 Unlock'; btnAction = 'premium'; }
+181:            else if (app.isPrivate) { cardClass = 'private-card'; badgeHtml = '<div class="badge-tag private">🔒 Private</div>'; btnText = '🔒 Request'; btnAction = 'private'; }
+182:            else if (app.isAppStore) { cardClass = 'appstore-card'; badgeHtml = '<div class="badge-tag appstore">📱 App Store</div>'; btnText = '📱 Download'; btnAction = 'appstore'; }
+214:        } else if (action === 'appstore' || action === 'free') {
+275:            if (tab === 'games') return app.tags.includes('games');
+276:            if (tab === 'movies') return app.tags.includes('movies');
+277:            if (tab === 'creative') return app.tags.includes('creative');
+278:            if (tab === 'utility') return app.tags.includes('utility');
+279:            if (tab === 'fed_originals') return app.tags.includes('fed_originals');
+280:            if (tab === 'missing') return app.tags.includes('missing');
+281:            if (tab === 'premium') return app.isPremium;
+282:            if (tab === 'private') return app.isPrivate;
+283:            if (tab === 'appstore') return app.isAppStore;
+291:            if (app.isPremium) { cardClass = 'premium-card'; badgeHtml = '<div class="badge-tag">💎</div>'; btnText = '💎 Unlock'; btnAction = 'premium'; }
+292:            else if (app.isPrivate) { cardClass = 'private-card'; badgeHtml = '<div class="badge-tag">🔒</div>'; btnText = '🔒 Request'; btnAction = 'private'; }
+293:            else if (app.isAppStore) { cardClass = 'appstore-card'; badgeHtml = '<div class="badge-tag">📱</div>'; btnText = '📱 Download'; btnAction = 'appstore'; }
+474:        // insert divider before premium/private/appstore
+489:        if (id === 'premium') return APPS.filter(a => a.isPremium).length;
+490:        if (id === 'private') return APPS.filter(a => a.isPrivate).length;
+491:        if (id === 'appstore') return APPS.filter(a => a.isAppStore).length;

@@ -1,0 +1,22 @@
+APPS count: 39
+TABS count: 10
+App Store apps: [ 'fedplay', 'fed_store_ios', 'fed_store_desktop', 'fed_store_tv' ]
+Premium apps: [
+  'caliee_rae',
+  'pokejumper',
+  'menina_dancando',
+  'vip_arcade',
+  'pro_studio'
+]
+Private apps: [ 'nexus_chat', 'elite_streams', 'vault_files' ]
+Movies apps: [
+  'wco_tv',
+  'seeflix',
+  'menina_dancando',
+  'elite_streams',
+  'crunchyroll',
+  'tubi',
+  'plex',
+  'fed_store_tv'
+]
+FED Originals: [ 'deviantart', 'supabase', 'fed_wallet' ]

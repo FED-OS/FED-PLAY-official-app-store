@@ -1,0 +1,37 @@
+total 132
+drwxr-xr-x 2 root root  4096 Aug 30 12:02 .
+drwxr-xr-x 8 user user  4096 Aug 30 12:03 ..
+-rw-r--r-- 1 root root 36453 Aug 30 12:01 app.js
+-rw-r--r-- 1 root root 23494 Aug 30 12:00 data.js
+-rw-r--r-- 1 root root  3134 Aug 30 12:02 games.html
+-rw-r--r-- 1 root root  3207 Aug 30 12:02 index.html
+-rw-r--r-- 1 root root 10999 Aug 30 12:02 layout.js
+-rw-r--r-- 1 root root 42444 Aug 30 11:59 styles.css
+---
+# FED Play Ultimate App Store — Build Plan
+
+## Analysis
+- [x] Study original HTML structure & identify components
+- [x] Catalog existing categories: Apps, Games, Movies & TV, Creative, Utility, FED Originals, Missing apps, Premium, Private, App Store
+- [x] Identify reusable patterns: sidebar, top-bar, categories-bar, featured hero, carousel, app-grid, holographic payment modal, toast, footer
+
+## Build
+- [x] Create shared CSS/JS as a foundation (styles.css, data.js, app.js, layout.js)
+- [ ] Create index.html (All Apps — the main hub) matching original design
+- [ ] Create games.html (Games tab)
+- [ ] Create movies.html (Movies & TV tab)
+- [ ] Create creative.html (Creative tab)
+- [ ] Create utility.html (Utility tab)
+- [ ] Create premium.html (Premium tab)
+- [ ] Create private.html (Private tab)
+- [ ] Create appstore.html (App Store tab)
+- [ ] Create fed-originals.html (FED Originals tab)
+- [ ] Create missing.html (Missing apps tab)
+- [ ] Add navigation linking all tabs together
+- [ ] Expand the APPS dataset with more entries for richness
+- [ ] Deploy and verify
+
+## Verify
+- [ ] All pages load and tabs navigate correctly
+- [ ] Search, filters, dark mode work across pages
+- [ ] Final preview shared with user

@@ -1,0 +1,114 @@
+        id: "fedplay",
+        name: "📱 FED Play",
+        category: "utility",
+        featured: true,
+        rating: 5.0, reviews: "1.2k",
+        description: "The official FED Play app – install this to get all your favorite unofficial apps in one place.",
+        downloadUrl: "https://www.mediafire.com/file/hnm5epejah3v63l/app-release%25233.apk/file",
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: true,
+        tags: ["apps", "utility", "fedplay"],
+        imageUrl: "https://placehold.co/400x400/a5b4fc/0c0a1d?text=📱"
+    },
+    {
+        id: "termux",
+        name: "Termux",
+        category: "utility",
+        featured: false,
+        rating: 4.7, reviews: "6.4k",
+        description: "Terminal emulator for Android with a Linux package collection — dev on the go.",
+        downloadUrl: "",
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "utility", "missing"],
+        imageUrl: "https://cdn.simpleicons.org/termux/000000"
+    },
+    {
+        id: "obsidian",
+        name: "Obsidian",
+        category: "utility",
+        featured: true,
+        rating: 4.8, reviews: "3.2k",
+        description: "A second brain — local Markdown knowledge base with linked notes and graphs.",
+        downloadUrl: "",
+        editorsChoice: true,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "utility", "missing"],
+        imageUrl: "https://cdn.simpleicons.org/obsidian/7C3AED"
+    },
+    {
+        id: "vscode",
+        name: "VS Code Server",
+        category: "utility",
+        featured: false,
+        rating: 4.9, reviews: "5.5k",
+        description: "Run Visual Studio Code in your browser — code anywhere from any device.",
+        downloadUrl: "",
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "utility", "missing"],
+        imageUrl: "https://cdn.simpleicons.org/visualstudiocode/007ACC"
+    },
+
+    // ===== PREMIUM-ONLY (extra) =====
+    {
+        id: "vip_arcade",
+        name: "👑 VIP Arcade",
+        category: "games",
+        featured: false,
+        rating: 4.8, reviews: "740",
+        description: "Premium retro arcade collection — 500+ classic cabinets with no ads.",
+        downloadUrl: "https://www.mediafire.com/file/premium/viparcade.apk/file",
+        editorsChoice: true,
+        isPremium: true, isPrivate: false, isAppStore: false,
+        tags: ["apps", "games", "premium"],
+        imageUrl: "https://placehold.co/400x400/fbbf24/0c0a1d?text=👑"
+    },
+    {
+        id: "pro_studio",
+        name: "🎨 Pro Studio",
+        category: "creative",
+        featured: false,
+        rating: 4.9, reviews: "890",
+        description: "Professional drawing & painting suite with 200+ brushes and layer support.",
+        downloadUrl: "https://www.mediafire.com/file/premium/prostudio.apk/file",
+        editorsChoice: true,
+        isPremium: true, isPrivate: false, isAppStore: false,
+        tags: ["apps", "creative", "premium"],
+        imageUrl: "https://placehold.co/400x400/fbbf24/0c0a1d?text=🎨"
+    },
+
+    // ===== PRIVATE-ONLY (extra) =====
+    {
+        id: "vault_files",
+        name: "🔒 Vault Files",
+        category: "utility",
+        featured: false,
+        rating: 4.7, reviews: "150",
+        description: "Encrypted file vault for sensitive documents. Invitation required.",
+        downloadUrl: null,
+        editorsChoice: false,
+        isPremium: false, isPrivate: true, isAppStore: false,
+        creatorContact: "https://t.me/vaultfiles",
+        tags: ["apps", "utility", "private"],
+        imageUrl: "https://placehold.co/400x400/60a5fa/0c0a1d?text=🔐"
+    },
+
+    // ===== FED ORIGINALS (extra) =====
+    {
+        id: "fed_wallet",
+        name: "💎 FED Wallet",
+        category: "utility",
+        featured: true,
+        rating: 4.8, reviews: "1.8k",
+        description: "FED Play's native crypto wallet — self-custody, swap, and staking built in.",
+        downloadUrl: "",
+        editorsChoice: true,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "utility", "fed_originals"],
+        imageUrl: "https://placehold.co/400x400/a5b4fc/0c0a1d?text=💎"
+    }
+];
+
+// Tab metadata — drives sidebar, badges, page heroes
+const TABS = [

@@ -1,0 +1,14 @@
+=== BROWSER STATE ===
+URL: chrome-error://chromewebdata/
+Title: data:text/html,<h1>reset</h1>
+Result: JS result: data:text/html,<h1>reset</h1>
+
+Accessibility tree:
+Page text: is blocked This content is blocked. Contact the site owner to fix the issue. ERR_BLOCKED_BY_CSP This content is blocked. Contact the site owner to fix the issue. var loadTimeDataRaw = {"details":"Details","errorCode":"ERR_BLOCKED_BY_CSP","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"\u003Cspan>\u003C/span> is blocked"},"hideDetails":"Hide details","iconClass":"icon-generic","isOfflineError":false,"language":"en","suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"This content is blocked. Contact the site owner to fix the issue."},"textdirection":"ltr","title":"data:text/html,\u003Ch1>reset\u003C/h1>"};
+
+Errors: Console Errors (2):
+   • Framing '' violates the following report-only Content Security Policy directive: "frame-src https://m.stripe.network". The violation has been logged, but no further action has been taken.
+
+   • Framing '' violates the following Content Security Policy directive: "frame-src https://m.stripe.network". The request has been blocked.
+
+=== END ===

@@ -1,0 +1,83 @@
+    function handleAppAction(action, id) {
+        const app = APPS.find(a => a.id === id);
+        if (!app) return;
+        if (action === 'premium' || action === 'private') {
+            pendingPremiumApp = app;
+            openHolographicModal();
+        } else if (action === 'appstore' || action === 'free') {
+            if (app.downloadUrl) {
+                window.open(app.downloadUrl, '_blank');
+                showToast(`⬇️ Downloading ${app.name}…`, 'success');
+            } else {
+                showToast(`⚠️ No download URL for ${app.name}`, 'warning');
+            }
+        }
+    }
+
+    // ---- holographic modal ----
+    let stripeLoaded = false;
+    function loadStripeSDK() {
+        if (stripeLoaded) return;
+        stripeLoaded = true;
+        // inject the stripe-buy-button element into the placeholder
+        const container = document.getElementById('stripe-button-container-quick');
+        if (container && !container.querySelector('stripe-buy-button')) {
+            const btn = document.createElement('stripe-buy-button');
+            btn.setAttribute('buy-button-id', 'buy_btn_1TqoW5LSIB6IjFRXK9UsvpAT');
+            btn.setAttribute('publishable-key', 'pk_live_51TKTF4LSIB6IjFRX3lKiYl3vVLCiphsZluzPsi9Zzz4Dxs1AxXqn2tQXwpXlKuzP2ePkXIn45BoqkVRsSVhSczkk00EhKZvS83');
+            container.appendChild(btn);
+        }
+        // load the SDK
+        if (!document.getElementById('stripe-buy-sdk')) {
+            const s = document.createElement('script');
+            s.src = 'https://js.stripe.com/v3/buy-button.js'; s.id = 'stripe-buy-sdk'; s.async = true;
+            document.head.appendChild(s);
+        }
+    }
+
+    function openHolographicModal() {
+        const modal = document.getElementById('holographicModal');
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        if (!paypalRendered) { renderPayPal(); paypalRendered = true; }
+        loadStripeSDK();
+    }
+    function closeHolographicModal() {
+        const modal = document.getElementById('holographicModal');
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+        pendingPremiumApp = null;
+    }
+    function renderPayPal() {
+        const container = document.getElementById('paypal-button-container-quick');
+        if (!container || typeof paypal === 'undefined') return;
+        container.innerHTML = '';
+        try {
+            paypal.Buttons({
+                createOrder: function (data, actions) { return actions.order.create({ purchase_units: [{ amount: { value: '10.00' } }] }); },
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                        showToast(`✅ PayPal completed by ${details.payer.name.given_name}`, 'success');
+                        if (pendingPremiumApp) setTimeout(() => unlockAfterPayment(pendingPremiumApp), 1200);
+                    });
+                },
+                onError: function (err) { showToast('❌ PayPal error: ' + err.message, 'error'); },
+                onCancel: function () { showToast('⏹️ PayPal cancelled.', 'warning'); }
+            }).render(container);
+        } catch (e) { console.error('PayPal render error:', e); }
+    }
+    function unlockAfterPayment(app) {
+        if (!app) return;
+        if (app.downloadUrl) { window.open(app.downloadUrl, '_blank'); showToast(`✅ ${app.name} unlocked! Download started.`, 'success'); }
+        else if (app.creatorContact) { window.open(app.creatorContact, '_blank'); showToast(`🔒 Contact ${app.name} creator for access.`, 'info'); }
+        else showToast(`ℹ️ ${app.name} — contact creator for access.`, 'info');
+        closeHolographicModal();
+    }
+
+    // ---- carousel ----
+    let carouselItems = [], duplicatedItems = [];
+    let track, scrollPosition = 0, animationId = null, isScrolling = true;
+    const SCROLL_SPEED = 0.6, gap = 12;
+
+    function buildCarousel() {
+        track = document.getElementById('carouselTrack');

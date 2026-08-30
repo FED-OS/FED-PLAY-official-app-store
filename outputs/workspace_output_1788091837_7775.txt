@@ -1,0 +1,1 @@
+54:            hero: { emoji: '🎁', title: 'Missing Apps', subtitle: 'The apps you can't find anywhere else — rare, removed, and region-locked gems.', stat: '🎁 rare finds' },

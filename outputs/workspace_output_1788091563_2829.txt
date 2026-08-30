@@ -1,0 +1,18 @@
+=== BROWSER STATE ===
+URL: chrome-error://chromewebdata/
+Title: localhost
+Result: ERROR: goto failed — Error: Page.goto: net::ERR_BLOCKED_BY_CSP at http://localhost:9090/index.html
+Call log:
+  - navigating to "http://localhost:9090/index.html", waiting until "load"
+
+
+Accessibility tree:
+Page text: localhost is blocked This content is blocked. Contact the site owner to fix the issue. ERR_BLOCKED_BY_CSP This content is blocked. Contact the site owner to fix the issue. var loadTimeDataRaw = {"details":"Details","errorCode":"ERR_BLOCKED_BY_CSP","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"\u003Cspan>localhost\u003C/span> is blocked"},"hideDetails":"Hide details","iconClass":"icon-generic","isOfflineError":false,"language":"en","suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"This content is blocked. Contact the site owner to fix the issue."},"textdirection":"ltr","title":"localhost"};
+
+Errors: Console Errors (3):
+   • Framing 'http://localhost:9090/' violates the following report-only Content Security Policy directive: "frame-src https://m.stripe.network". The violation has been logged, but no further action has been taken.
+
+   • Framing 'http://localhost:9090/' violates the following Content Security Policy directive: "frame-src https://m.stripe.network". The request has been blocked.
+
+   • Failed to load resource: the server responded with a status of 404 (File not found) (http://localhost:9090/favicon.ico:0)
+=== END ===

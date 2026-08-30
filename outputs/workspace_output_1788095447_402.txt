@@ -1,0 +1,1 @@
+547:    { id: "extensions",    label: "Surf Fed Ext.",   icon: "extension",           href: "extensions.html",    emoji: "🷴", cls: "extensions" }

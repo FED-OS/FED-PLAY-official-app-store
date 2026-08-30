@@ -1,0 +1,28 @@
+358:.btn-social { background: #E9425E; color: #fff; }
+359:.btn-social:hover { background: #C5223F; transform: scale(1.02); }
+360:.btn-creative { background: #8B5CF6; color: #fff; }
+361:.btn-creative:hover { background: #7C3AED; transform: scale(1.02); }
+362:.btn-utility { background: #0D9488; color: #fff; }
+363:.btn-utility:hover { background: #0F766E; transform: scale(1.02); }
+364:.btn-games { background: #F97316; color: #fff; }
+365:.btn-games:hover { background: #EA580C; transform: scale(1.02); }
+366:.btn-movies { background: #4F46E5; color: #fff; }
+367:.btn-movies:hover { background: #4338CA; transform: scale(1.02); }
+368:.btn-premium { background: #F59E0B; color: #0B0F1A; }
+369:.btn-premium:hover { background: #D97706; color: #fff; transform: scale(1.02); }
+370:.btn-private { background: #3B82F6; color: #fff; }
+371:.btn-private:hover { background: #2563EB; transform: scale(1.02); }
+372:.btn-appstore { background: #7C3AED; color: #fff; }
+373:.btn-appstore:hover { background: #6D28D9; transform: scale(1.02); }
+374:.btn-featured { background: #1A73E8; color: #fff; }
+375:.btn-featured:hover { background: #1557B0; transform: scale(1.02); }
+597:.holographic-modal-content .btn-ghost { background: var(--bg-surface-2); border: 1px solid var(--border-light); color: var(--text-secondary); }
+598:.holographic-modal-content .btn-ghost:hover { background: var(--bg-surface-2); color: var(--text-primary); }
+599:.holographic-modal-content .btn-crypto { background: #F7931A; color: #121212; font-weight: 700; }
+600:.holographic-modal-content .btn-crypto:hover { background: #E6850E; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(247, 147, 26, 0.35); }
+601:.holographic-modal-content .btn-telegram { background: #0088CC; color: #fff; }
+602:.holographic-modal-content .btn-telegram:hover { background: #0077B3; }
+603:.holographic-modal-content .btn-safew { background: #1A1A26; color: #00FF88; border: 1px solid #333; }
+604:.holographic-modal-content .btn-safew:hover { background: #222236; }
+605:.holographic-modal-content .btn-venmo { background: linear-gradient(145deg, #1A8CFF, #0066DD); color: #fff; }
+606:.holographic-modal-content .btn-venmo:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0, 136, 255, 0.4); }

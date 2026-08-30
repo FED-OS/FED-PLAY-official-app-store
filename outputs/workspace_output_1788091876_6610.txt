@@ -1,0 +1,12 @@
+        window.FED_PAGE = {
+            tab: 'missing',
+            featuredIds: ['midjourney', 'stardew_valley', 'artstation', 'obsidian'],
+            gridTitle: '🎁 Missing Apps',
+            gridSub: 'hard to find',
+            hero: { emoji: '🎁', title: 'Missing Apps', subtitle: 'The apps you can\u2019t find anywhere else — rare, removed, and region-locked gems.', stat: '🎁 rare finds' },
+            welcome: 'Missing Apps — discover the unofficial way'
+        };
+        FED_LAYOUT.inject();
+        FED.init();
+    </script>
+</body>

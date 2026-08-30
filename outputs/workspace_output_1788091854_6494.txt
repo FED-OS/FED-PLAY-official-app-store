@@ -1,0 +1,19 @@
+POTENTIAL ISSUE in appstore.html:
+54:            hero: { emoji: '📱', title: 'App Store', subtitle: 'Get FED Play on every device — Android, iOS, desktop, and TV. One app, every platform.', stat: '📱 all platforms' },
+POTENTIAL ISSUE in creative.html:
+54:            hero: { emoji: '🎨', title: 'Creative', subtitle: 'Art, design, and AI generation tools for creators and dreamers.', stat: '🖌️ 200+ brushes' },
+POTENTIAL ISSUE in fed-originals.html:
+54:            hero: { emoji: '❤️', title: 'FED Originals', subtitle: 'Hand-picked apps and tools curated by the FED Play team — our personal favorites.', stat: '❤️ team picks' },
+POTENTIAL ISSUE in games.html:
+54:            hero: { emoji: '🎮', title: 'Games', subtitle: 'Indie gems, retro classics, and blockbuster adventures — all sideload-ready.', stat: '🕹️ controller friendly' },
+POTENTIAL ISSUE in missing.html:
+54:            hero: { emoji: '🎁', title: 'Missing Apps', subtitle: 'The apps you can\u2019t find anywhere else — rare, removed, and region-locked gems.', stat: '🎁 rare finds' },
+POTENTIAL ISSUE in movies.html:
+54:            hero: { emoji: '🎬', title: 'Movies & TV', subtitle: 'Stream anime, blockbusters, and live TV — no subscription walls.', stat: '📺 unlimited streams' },
+POTENTIAL ISSUE in premium.html:
+54:            hero: { emoji: '💎', title: 'Premium', subtitle: 'Exclusive apps, ad-free experiences, and VIP content. Unlock with crypto, card, or wallet.', stat: '💎 pay what you want' },
+POTENTIAL ISSUE in private.html:
+54:            hero: { emoji: '🔐', title: 'Private', subtitle: 'Invitation-only apps, encrypted vaults, and exclusive communities. Request access to unlock.', stat: '🔒 invite only' },
+POTENTIAL ISSUE in utility.html:
+54:            hero: { emoji: '🛠️', title: 'Utility', subtitle: 'Dev tools, terminals, wallets, and productivity apps that get things done.', stat: '⚡ developer ready' },
+---check done---

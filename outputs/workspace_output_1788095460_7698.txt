@@ -1,0 +1,3 @@
+Found old line: '    { id: "extensions",    label: "Surf Fed Ext.",   icon: "extension",           href: "extensions.html",    emoji: "\U0001fdf4", cls: "extensions" }'
+New line: '    { id: "extensions",    label: "Surf Fed Ext.",   icon: "extension",           href: "extensions.html",    emoji: "🌊", cls: "extensions" }'
+SUCCESS

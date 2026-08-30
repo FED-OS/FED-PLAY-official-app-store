@@ -1,0 +1,41 @@
+    }
+
+    function getCategoryEmoji(cat) {
+        const map = { social: '💬', creative: '🎨', utility: '🛠️', games: '🎮', movies: '🎬' };
+        return map[cat] || '📦';
+    }
+
+    function getButtonClass(app) {
+        if (app.isPremium) return 'btn-premium';
+        if (app.isPrivate) return 'btn-private';
+        if (app.isAppStore) return 'btn-appstore';
+        if (app.featured) return 'btn-featured';
+        return `btn-${app.category}`;
+    }
+
+    // ---- toast ----
+    function showToast(message, type = 'info', duration = 3500) {
+        const container = document.getElementById('toastContainer');
+        if (!container) return;
+        const toast = document.createElement('div');
+        const icons = { success: '✅', error: '❌', warning: '⚠️', info: 'ℹ️' };
+        toast.className = `toast ${type}`;
+        toast.innerHTML = `<span class="toast-icon">${icons[type] || 'ℹ️'}</span> ${escapeHtml(message)}`;
+        container.appendChild(toast);
+        setTimeout(() => {
+            toast.classList.add('out');
+            setTimeout(() => { if (toast.parentNode) toast.remove(); }, 400);
+        }, duration);
+    }
+
+    // ---- state ----
+    let activeCategory = 'all';
+    let searchQuery = '';
+    let pendingPremiumApp = null;
+    let searchDebounceTimer = null;
+    let paypalRendered = false;
+
+    let featuredIds = [];
+    let currentFeaturedIndex = 0;
+    let featuredInterval = null;
+

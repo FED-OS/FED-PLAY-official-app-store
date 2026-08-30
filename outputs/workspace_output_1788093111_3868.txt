@@ -1,0 +1,34 @@
+    function getFilteredApps() {
+        const page = window.FED_PAGE || {};
+        const tab = page.tab || 'apps';
+        return APPS.filter(app => {
+            // tab gating
+            if (tab === 'games' && !app.tags.includes('games')) return false;
+            if (tab === 'movies' && !app.tags.includes('movies')) return false;
+            if (tab === 'creative' && !app.tags.includes('creative')) return false;
+            if (tab === 'utility' && !app.tags.includes('utility')) return false;
+            if (tab === 'fed_originals' && !app.tags.includes('fed_originals')) return false;
+            if (tab === 'missing' && !app.tags.includes('missing')) return false;
+            if (tab === 'premium' && !app.isPremium) return false;
+            if (tab === 'private' && !app.isPrivate) return false;
+            if (tab === 'appstore' && !app.isAppStore) return false;
+
+            // chip gating
+            if (activeCategory === 'featured' && !app.featured) return false;
+            if (activeCategory === 'premium' && !app.isPremium) return false;
+            if (activeCategory === 'private' && !app.isPrivate) return false;
+            if (activeCategory === 'appstore' && !app.isAppStore) return false;
+            if (activeCategory !== 'all' && activeCategory !== 'featured' && activeCategory !== 'premium' &&
+                activeCategory !== 'private' && activeCategory !== 'appstore' && app.category !== activeCategory)
+                return false;
+
+            // search
+            if (searchQuery.trim() !== '') {
+                const q = searchQuery.toLowerCase();
+                return app.name.toLowerCase().includes(q) || app.description.toLowerCase().includes(q);
+            }
+            return true;
+        });
+    }
+
+    // ---- featured hero ----

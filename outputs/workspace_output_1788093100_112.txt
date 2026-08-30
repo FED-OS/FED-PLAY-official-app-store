@@ -1,0 +1,34 @@
+        tags: ["apps", "movies", "appstore"],
+        imageUrl: "https://placehold.co/400x400/a5b4fc/0c0a1d?text=📺"
+    }
+];
+
+// Tab metadata — drives sidebar, badges, page heroes
+const TABS = [
+    { id: "apps",          label: "Apps",            icon: "apps",                href: "index.html",         emoji: "📦" },
+    { id: "games",         label: "Games",           icon: "sports_esports",      href: "games.html",         emoji: "🎮" },
+    { id: "movies",        label: "Movies & TV",     icon: "local_movies",        href: "movies.html",        emoji: "🎬" },
+    { id: "creative",      label: "Creative",        icon: "palette",             href: "creative.html",      emoji: "🎨" },
+    { id: "utility",       label: "Utility",         icon: "build",               href: "utility.html",       emoji: "🛠️" },
+    { id: "fed_originals", label: "FED Originals",   icon: "favorite",            href: "fed-originals.html", emoji: "❤️" },
+    { id: "missing",       label: "Missing apps",    icon: "redeem",              href: "missing.html",       emoji: "🎁" },
+    { id: "premium",       label: "Premium",         icon: "workspace_premium",   href: "premium.html",       emoji: "💎", cls: "premium" },
+    { id: "private",       label: "Private",         icon: "lock",                href: "private.html",       emoji: "🔒", cls: "private" },
+    { id: "appstore",      label: "App Store",       icon: "storefront",          href: "appstore.html",      emoji: "📱", cls: "appstore" }
+];
+
+// Category chips shown in the top category bar
+const CHIPS = [
+    { cat: "all",       label: "✨ All" },
+    { cat: "featured",  label: "⭐ Featured" },
+    { cat: "premium",   label: "💎 Premium", cls: "premium-chip" },
+    { cat: "private",   label: "🔒 Private", cls: "private-chip" },
+    { cat: "appstore",  label: "📱 App Store", cls: "appstore-chip" },
+    { cat: "social",    label: "💬 Social" },
+    { cat: "creative",  label: "🎨 Creative" },
+    { cat: "utility",   label: "🛠️ Utility" },
+    { cat: "games",     label: "🎮 Games" },
+    { cat: "movies",    label: "🎬 Movies" }
+];
+
+if (typeof window !== 'undefined') { window.APPS = APPS; window.TABS = TABS; window.CHIPS = CHIPS; }

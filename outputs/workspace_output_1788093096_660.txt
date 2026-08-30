@@ -1,0 +1,120 @@
+/* ============================================================
+   FED PLAY · ULTIMATE APP STORE — SHARED DATA LAYER
+   Central catalog of apps. Each app can belong to multiple tabs.
+   ============================================================ */
+const APPS = [
+    // ===== CREATIVE =====
+    {
+        id: "deviantart",
+        name: "DeviantArt",
+        category: "creative",
+        featured: true,
+        rating: 4.8, reviews: "2.1k",
+        description: "Massive art community for sharing digital art, fan art, and original characters.",
+        downloadUrl: "https://download1583.mediafire.com/ruryrzsmpopgo_F6U1fiw824xPidfHf8z5PUylMMN3DQP_Q3ID3eKvuQv4lG2mItQ9dQ66tZPJTikY7r0JXdjxiXAWy54xU1I5cg_gSXWI0QkyRT9Et91QIDLcPXi3R-z4WTUrfvdb_tJp7fc5AdV6TlO5MWUs8Y-GQYK8O4H019ToM/x7fxbpe7ak6bxq4/dev+art+%281%29.apk",
+        editorsChoice: true,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "creative", "fed_originals", "missing"],
+        imageUrl: "https://images.icon-icons.com/2972/PNG/512/deviantart_logo_icon_186874.png"
+    },
+    {
+        id: "midjourney",
+        name: "Midjourney",
+        category: "creative",
+        featured: false,
+        rating: 4.9, reviews: "3.2k",
+        description: "AI image generation from text prompts — concept art & experimental visuals.",
+        downloadUrl: "https://download946.mediafire.com/ie2zdxq0xtcg4frQQl3NAgGvphxIj1SQmsCelTpbDEcROe8WNtlAcOGVgE8iw02OzT7lZfE3yhg-vrQAskA86IVWtT6Kl2AUvwq9kR5EEq5VF938xnmFMv4GtMROF5vijZURlhu19gqPAOzhhX5CT4r5wTMZ23eJCs_dyjfNhASI_wM/ikrld20p2ycl64e/Mid+journey+%281%29.apk",
+        editorsChoice: true,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "creative", "missing"],
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png"
+    },
+    {
+        id: "artstation",
+        name: "ArtStation",
+        category: "creative",
+        featured: false,
+        rating: 4.7, reviews: "1.4k",
+        description: "Showcase platform for professional artists in games, film, and media.",
+        downloadUrl: "",
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "creative", "missing"],
+        imageUrl: "https://cdn.simpleicons.org/artstation/13A3D6"
+    },
+    {
+        id: "behance",
+        name: "Behance",
+        category: "creative",
+        featured: false,
+        rating: 4.6, reviews: "980",
+        description: "Adobe's portfolio network for creatives to showcase and discover work.",
+        downloadUrl: "",
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "creative", "missing"],
+        imageUrl: "https://cdn.simpleicons.org/behance/1769FF"
+    },
+    {
+        id: "pixiv",
+        name: "Pixiv",
+        category: "creative",
+        featured: true,
+        rating: 4.8, reviews: "5.1k",
+        description: "Japan's largest illustration community — manga, anime, and fan art.",
+        downloadUrl: "",
+        editorsChoice: true,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "creative", "missing"],
+        imageUrl: "https://cdn.simpleicons.org/pixiv/0096FA"
+    },
+
+    // ===== SOCIAL =====
+    {
+        id: "tumbex",
+        name: "Tumbex",
+        category: "social",
+        featured: false,
+        rating: 4.5, reviews: "890",
+        description: "Third-party Tumblr viewer with cleaner layout for blogs and photo archives.",
+        downloadUrl: "https://download1326.mediafire.com/5fum0s8zk9dggWInT1-UZ9EuaY-t58MPp8v2RgxM2nRMOffcZkHemJlf6W7G53YHi1JdL-fm7HiQVbI9wzgOWKqKK_T07AI4ywKO7zk5Uk-Jby7VFCyHlrdWAUkl93GgrD9Jr-OYdeR46021IzG19fTJbVM5eCUE4uwQlgZ1wWi5jyw/160y2mswn3jisam/Tumbex%281%29.apk",
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "social", "missing"],
+        imageUrl: "https://cdn.mos.cms.futurecdn.net/ge36mrFPXqtx8p57b2sT5U.jpg"
+    },
+    {
+        id: "kofi",
+        name: "Ko-fi",
+        category: "social",
+        featured: true,
+        rating: 4.7, reviews: "2.2k",
+        description: "Creator-support platform for donations, subscriptions, and digital goods.",
+        downloadUrl: "https://download851.mediafire.com/owzbwoluy5dgYhaJN3vckpZQ5KVyK51dI6vi9iipEU5fIsoYq303fDDmHGMHAKhMfzExwhPUGJILgwWVUKIzac7D62PDeOuC-xMtTI5NTEg-ixJAYZsLhbnNMYOOPjcua5F3pVk7vXKOkQwmccPtDErYwx63Y5px_u2dxaH8P3yQ4ek/jvi9cnmq7k1pltu/Ko-Fi+%281%29.apk",
+        editorsChoice: false,
+        isPremium: false, isPrivate: false, isAppStore: false,
+        tags: ["apps", "social", "missing"],
+        imageUrl: "https://cdn.prod.website-files.com/5c14e387dab576fe667689cf/670f5a01229bf8a18f97a3c1_favion.png"
+    },
+    {
+        id: "caliee_rae",
+        name: "🌸 Caliee Rae Club",
+        category: "social",
+        featured: false,
+        rating: 4.9, reviews: "1.2k",
+        description: "Exclusive community for Caliee Rae fans — behind-the-scenes, early access, and more.",
+        downloadUrl: "https://www.mediafire.com/file/x6fvgpnpg3gujah/calieeraeapp-release.apk/file",
+        editorsChoice: false,
+        isPremium: true, isPrivate: false, isAppStore: false,
+        tags: ["apps", "social", "premium"],
+        imageUrl: "https://placehold.co/400x400/fbbf24/0c0a1d?text=🌸"
+    },
+    {
+        id: "nexus_chat",
+        name: "🔒 Nexus Chat",
+        category: "social",
+        featured: false,
+        rating: 4.6, reviews: "340",
+        description: "Private messaging platform for small groups. Request access from the creator.",
+        downloadUrl: null,

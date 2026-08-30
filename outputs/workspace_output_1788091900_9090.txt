@@ -1,0 +1,113 @@
+=== BROWSER STATE ===
+URL: http://localhost:9091/index.html?v=2
+Title: FED Play · App Store
+Result: Clicked: [13]
+
+Interactive elements (99):
+  [0] a "appsApps39" -> index.html
+  [1] a "sports_esportsGames8" -> games.html
+  [2] a "local_moviesMovies & TV8" -> movies.html
+  [3] a "paletteCreative6" -> creative.html
+  [4] a "buildUtility10" -> utility.html
+  [5] a "favoriteFED Originals3" -> fed-originals.html
+  [6] a "redeemMissing apps19" -> missing.html
+  [7] a "workspace_premiumPremium5" -> premium.html
+  [8] a "lockPrivate3" -> private.html
+  [9] a "storefrontApp Store4" -> appstore.html
+  [11] input type="text"
+  [12] button type="button" "Subscribe"
+  [13] button "light_mode
+                    dark_mode"
+  [14] button "⬇ Install →"
+  [15] button "‹"
+  [16] button "Install"
+  [17] button "Install"
+  [18] button "Install"
+  [19] button "Install"
+  [20] button "Install"
+  [21] button "Install"
+  [22] button "Install"
+  [23] button "💎 Unlock"
+  [24] button "🔒 Request"
+  [25] button "Install"
+  [26] button "Install"
+  [27] button "Install"
+  [28] button "Install"
+  [29] button "Install"
+  [30] button "💎 Unlock"
+  [31] button "Install"
+  [32] button "Install"
+  [33] button "Install"
+  [34] button "Install"
+  [35] button "Install"
+  [36] button "Install"
+  [37] button "💎 Unlock"
+  [38] button "🔒 Request"
+  [39] button "Install"
+  [40] button "Install"
+  [41] button "Install"
+  [42] button "Install"
+  [43] button "Install"
+  [44] button "📱 Download"
+  [45] button "Install"
+  [46] button "Install"
+  [47] button "Install"
+  [48] button "💎 Unlock"
+  [49] button "💎 Unlock"
+  [50] button "🔒 Request"
+  [51] button "Install"
+  [52] button "📱 Download"
+  [53] button "📱 Download"
+  [54] button "📱 Download"
+  [55] button "Install"
+  [56] button "Install"
+  [57] button "Install"
+  [58] button "Install"
+  [59] button "Install"
+  [60] button "Install"
+  [61] button "Install"
+  [62] button "💎 Unlock"
+  [63] button "🔒 Request"
+  [64] button "Install"
+  [65] button "Install"
+  [66] button "Install"
+  [67] button "Install"
+  [68] button "Install"
+  [69] button "💎 Unlock"
+  [70] button "Install"
+  [71] button "Install"
+  [72] button "Install"
+  [73] button "Install"
+  [74] button "Install"
+  [75] button "Install"
+  [76] button "💎 Unlock"
+  [77] button "🔒 Request"
+  [78] button "Install"
+  [79] button "Install"
+  [80] button "Install"
+  [81] button "Install"
+  [82] button "Install"
+  [83] button "📱 Download"
+  [84] button "Install"
+  [85] button "Install"
+  [86] button "Install"
+  [87] button "💎 Unlock"
+  [88] button "💎 Unlock"
+  [89] button "🔒 Request"
+  [90] button "Install"
+  [91] button "📱 Download"
+  [92] button "📱 Download"
+  [93] button "📱 Download"
+  [94] button "Install"
+  [95] button "Install"
+  [96] button "Install"
+  [97] button "Install"
+  [98] button "Install"
+  [99] button "Install"
+
+Accessibility tree:
+Page text: play_arrow FED Play apps Apps 39 sports_esports Games 8 local_movies Movies & TV 8 palette Creative 6 build Utility 10 favorite FED Originals 3 redeem Missing apps 19 workspace_premium Premium 5 lock Private 3 storefront App Store 4 search mic Subscribe light_mode dark_mode F ✨ All ⭐ Featured 💎 Premium 🔒 Private 📱 App Store 💬 Social 🎨 Creative 🛠️ Utility 🎮 Games 🎬 Movies Ko-fi Creator-support platform for donations, subscriptions, and digital goods. ⭐ 4.7 (2.2k reviews) 📦 official wrapper ⬇ Install → 🔥 Trending Now live ‹ DeviantArt 🎨 Creative ★★★★½ Install Midjourney 🎨 Creative ★★★★½ Install ArtStation 🎨 Creative ★★★★½ Install Behance 🎨 Creative ★★★★½ Install Pixiv 🎨 Creative ★★★★½ Install Tumbex 💬 Social ★★★★½ Install Ko-fi 💬 Social ★★★★½ Install 💎 🌸 Caliee Rae Club 💬 Social ★★★★½ 💎 Unlock 🔒 🔒 Nexus Chat 💬 Social ★★★★½ 🔒 Request Mastodon 💬 Social ★★★★☆ Install Bluesky 💬 Social ★★★★½ Install Discord 💬 Social ★★★★½ Install Itch.io 🎮 Games ★★★★½ Install Pokémon FireRed 🎮 Games ★★★★½ Install 💎 pokejumper 🎮 Games ★★★★½ 💎 Unlock Stardew Valley 🎮 Games ★★★★½ Install Minecraft 🎮 Games ★★★★½ Install Roblox 🎮 Games ★★★★½ Install Terraria 🎮 Games ★★★★½ Install WCO TV 🎬 Movies ★★★★½ Install Seeflix 🎬 Movies ★★★★½ Install 💎 Menina dancando funk 🎬 Movies ★★★★½ 💎 Unlock 🔒 🔒 Elite Streams 🎬 Movies ★★★★½ 🔒 Request Crunchyroll 🎬 Movies ★★★★½ Install Tubi 🎬 Movies ★★★★½ Install Plex 🎬 Movies ★★★★☆ Install Polymarket 🛠️ Utility ★★★★☆ Install Supabase 🛠️ Utility ★★★★½ Install 📱 📱 FED Play 🛠️ Utility ★★★★★ 📱 Download Termux 🛠️ Utility ★★★★½ Install Obsidian 🛠️ Utility ★★★★½ Install VS Code Server 🛠️ Utility ★★★★½ Install 💎 👑 VIP Arcade 🎮 Games ★★★★½ 💎 Unlock 💎 🎨 Pro Studio 🎨 Creative ★★★★½ 💎 Unlock 🔒 🔒 Vault Files 🛠️ Utility ★★★★½ 🔒 Request 💎 FED Wallet 🛠️ Utility ★★★★½ Install 📱 📱 FED Play (iOS) 🛠️ Utility ★★★★½ 📱 Download 📱 💻 FED Play Desktop 🛠️ Utility ★★★★½ 📱 Download 📱 📺 FED Play TV 🎬 Movies ★★★★½ 📱 Download DeviantArt 🎨 Creative ★★★★½ Install Midjourney 🎨 Creative ★★★★½ Install A
+
+Screenshot: /workspace/.screenshots/step_017.png
+Use see-image to view: /workspace/.screenshots/step_017.png
+=== END ===

@@ -1,0 +1,11 @@
+        description: "FED Play's native crypto wallet M-bM-^@M-^T self-custody, swap, and staking built in.",$
+        downloadUrl: "",$
+        editorsChoice: true,$
+        isPremium: false, isPrivate: false, isAppStore: false,$
+        tags: ["apps", "utility", "fed_originals"],$
+        imageUrl: "https://placehold.co/400x400/a5b4fc/0c0a1d?text=M-pM-^_M-^RM-^N"$
+    }$
+];$
+$
+// Tab metadata M-bM-^@M-^T drives sidebar, badges, page heroes$
+const TABS = [$

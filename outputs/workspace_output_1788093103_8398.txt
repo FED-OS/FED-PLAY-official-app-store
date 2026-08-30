@@ -1,0 +1,41 @@
+    // ---- featured hero ----
+    function renderFeatured() {
+        const container = document.getElementById('featuredAppContainer');
+        if (!container || featuredIds.length === 0) return;
+        const app = APPS.find(a => a.id === featuredIds[currentFeaturedIndex]);
+        if (!app) return;
+
+        let btnText = '⬇ Install', btnAction = 'free', badgeHtml = '';
+        if (app.isPremium) { btnText = '💎 Unlock'; btnAction = 'premium'; badgeHtml = '<span class="featured-badge-tag">💎 Premium</span>'; }
+        else if (app.isPrivate) { btnText = '🔒 Request'; btnAction = 'private'; badgeHtml = '<span class="featured-badge-tag">🔒 Private</span>'; }
+        else if (app.isAppStore) { btnText = '📱 Download'; btnAction = 'appstore'; badgeHtml = '<span class="featured-badge-tag">📱 App Store</span>'; }
+
+        const btnClass = getButtonClass(app);
+        container.innerHTML = `
+            <div class="featured-info">
+                <div class="featured-icon-wrap">
+                    <img class="featured-icon" src="${app.imageUrl}" alt="${escapeHtml(app.name)} logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="featured-icon-fallback">${getCategoryEmoji(app.category)}</span>
+                    <div style="display:flex;flex-direction:column;">
+                        <h3>${escapeHtml(app.name)}</h3>
+                        ${badgeHtml}
+                    </div>
+                </div>
+                <div class="featured-desc">${escapeHtml(app.description)}</div>
+                <div class="featured-meta">
+                    <span>⭐ ${app.rating} (${app.reviews} reviews)</span>
+                    <span>📦 official wrapper</span>
+                    ${app.editorsChoice ? '<span class="gp-badge">⭐ Editor\'s pick</span>' : ''}
+                </div>
+            </div>
+            <button class="featured-install ${btnClass}" data-id="${app.id}" data-action="${btnAction}" data-url="${app.downloadUrl || ''}" data-contact="${app.creatorContact || ''}" style="border: 2px solid currentColor; background: transparent; color: var(--text-primary);">
+                ${btnText} <span style="font-size:14px;">→</span>
+            </button>`;
+        container.querySelector('.featured-install').addEventListener('click', function (e) {
+            e.stopPropagation();
+            handleAppAction(this.dataset.action, this.dataset.id);
+        });
+        document.querySelectorAll('.featured-dot').forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentFeaturedIndex);
+        });
+    }

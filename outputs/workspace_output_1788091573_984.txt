@@ -1,0 +1,36 @@
+        <div class="toast-container" id="toastContainer" role="status" aria-live="polite"></div>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>`;
+    }
+
+    function inject() {
+        // scripts that must load for the modal
+        const head = document.head;
+        if (!document.getElementById('paypal-sdk')) {
+            const s = document.createElement('script');
+            s.src = PAYPAL_SDK; s.id = 'paypal-sdk';
+            s.setAttribute('data-sdk-integration-source', 'developer-studio');
+            head.appendChild(s);
+        }
+        if (!document.getElementById('stripe-buy-sdk')) {
+            const s = document.createElement('script');
+            s.src = STRIPE_SDK; s.id = 'stripe-buy-sdk'; s.async = true;
+            head.appendChild(s);
+        }
+
+        // inject top bar + categories into main content (before #fedContent)
+        const main = document.querySelector('.main-content');
+        if (main) {
+            const content = document.getElementById('fedContent');
+            const topWrap = document.createElement('div');
+            topWrap.innerHTML = topBarHTML() + categoriesBarHTML();
+            const nodes = [...topWrap.childNodes];
+            // insert before content if present, else prepend
+            if (content) nodes.forEach(n => main.insertBefore(n, content));
+            else nodes.forEach(n => main.appendChild(n));
+        }
+
+        // footer at end of main
+        if (main) {
+            const f = document.createElement('div');
+            f.innerHTML = footerHTML();
+            while (f.firstChild) main.appendChild(f.firstChild);
